@@ -27,6 +27,6 @@ jobs:
         run:  pipenv install
 #       - name: Step 2
 #         run:  pipenv install -r requirements.txt
-#       - name: Execute test case
-#         run: |
-#           pipenv run python -m pytest -n 3
+      - name: Execute test case
+        run: |
+          pipenv run python -m pytest -n 3
