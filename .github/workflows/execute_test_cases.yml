@@ -22,7 +22,7 @@ jobs:
           # Semantic version range syntax or exact version of a Python version
           python-version: '3.9'
       - name: Install dependencies
-        run:  pipenv install -r requirements.txt
+        run:  pipenv lock --requirements
 #       - name: Step 1
 #         run:  pipenv install
 #       - name: Step 2
