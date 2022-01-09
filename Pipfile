@@ -9,6 +9,8 @@ selenium = "*"
 webdriver-manager = "*"
 pytest-xdist = "*"
 pipenv = "*"
+pytest-html = "*"
+contest = "*"
 
 [dev-packages]
 

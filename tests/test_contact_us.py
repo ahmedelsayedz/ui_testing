@@ -1,5 +1,7 @@
-import pytest
 import os
+
+import pytest
+
 from helper.common import load_json_file
 from pages.career_by_location_page import CareerLocationPage
 from pages.careers_page import CareersPage
