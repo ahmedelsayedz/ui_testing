@@ -23,8 +23,8 @@ jobs:
           python-version: '3.9'
       - name: Install dependencies
         run:  pip install pipenv
-#       - name: Step 1
-#         run:  pipenv install
+      - name: Step 1
+        run:  pipenv install
 #       - name: Step 2
 #         run:  pipenv install -r requirements.txt
 #       - name: Execute test case
