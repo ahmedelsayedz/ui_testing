@@ -22,11 +22,11 @@ jobs:
           # Semantic version range syntax or exact version of a Python version
           python-version: '3.8'
       - name: Install dependencies
-        run:  pip3 install pipenv
-      - name: Step 1
         run:  pipenv install
-      - name: Step 2
-        run:  pipenv install -r requirements.txt
-      - name: Execute test case
-        run: |
-          pipenv run python -m pytest -n 3
+#       - name: Step 1
+#         run:  pipenv install
+#       - name: Step 2
+#         run:  pipenv install -r requirements.txt
+#       - name: Execute test case
+#         run: |
+#           pipenv run python -m pytest -n 3
