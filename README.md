@@ -11,27 +11,27 @@ This repo contains a collection of automation test cases that targets the automa
 We recommend using Python 3.6+ and inside a virtualenv.
 
 ## Setup: 🎬
-1- Go to the api_testing directory and setup the pipenv to install our dependencies
+1- Clone the repository with the following command
 ```bash
-pipenv install
+git clone git@github.com:ahmedelsayedz/ui_testing.git
 ```
 
-2- From ui_testing directory setup the requirements
+2- Go to the api_testing directory and setup the requirements
 ```bash
-pipenv install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## Local Execution: 🤖
 
 Run the following command to execute all the test cases in parallel simultaneously
 ```bash
-pipenv run python -m pytest -n 3
+pytest -s tests/test_musala.py -n 3
 ```
 
 
 ## Debugging: 🔍
 
-The best way to debug the test suite is using `pdbpp` package which will replace the default `pdb`. Execute `pipenv install pdbpp` to install the required package. Add `import pdb; pdb.set_trace()` as a line of code that will allow you to put a breakpoint in your code.
+The best way to debug the test suite is using `pdbpp` package which will replace the default `pdb`. Execute `pip3 install pdbpp` to install the required package. Add `import pdb; pdb.set_trace()` as a line of code that will allow you to put a breakpoint in your code.
 
 
 ## Reporting: ䷽

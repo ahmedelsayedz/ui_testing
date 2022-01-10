@@ -109,7 +109,7 @@ FilterByCity = [
 
 
 @pytest.mark.parametrize("city, expected_title", FilterByCity)
-def test003_check_open_positions_by_city(browser, city, expected_title):
+def test004_check_open_positions_by_city(browser, city, expected_title):
     """
     Visit http://www.musala.com/
     Go to Careers
@@ -137,4 +137,3 @@ def test003_check_open_positions_by_city(browser, city, expected_title):
     if actual_title is not None:
         print(city)
         print("Position: " + actual_title)
-
