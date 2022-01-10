@@ -5,7 +5,6 @@ This module contains shared fixtures.
 import json
 import pytest
 import selenium.webdriver
-from selenium.webdriver import DesiredCapabilities
 from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.chrome.service import Service
@@ -30,8 +29,6 @@ def config(scope='session'):
 def browser(config):
     # Initialize the WebDriver instance
     if config['browser'] == 'Firefox':
-        firefox_capabilities = DesiredCapabilities.FIREFOX
-        firefox_capabilities['marionette'] = True
         driver = selenium.webdriver.Firefox(executable_path=GeckoDriverManager().install())
         driver.maximize_window()
     elif config['browser'] == 'Chrome':
@@ -39,9 +36,10 @@ def browser(config):
         driver = selenium.webdriver.Chrome(service=s)
         driver.maximize_window()
     elif config['browser'] == 'Headless Chrome':
-        opts = selenium.webdriver.ChromeOptions()
-        opts.add_argument('headless')
-        driver = selenium.webdriver.Chrome(options=opts)
+        options = selenium.webdriver.ChromeOptions()
+        options.add_argument("--headless")
+        driver = selenium.webdriver.Chrome(ChromeDriverManager().install(), options=options)
+
     else:
         raise Exception(f'Browser "{config["browser"]}" is not supported')
 
