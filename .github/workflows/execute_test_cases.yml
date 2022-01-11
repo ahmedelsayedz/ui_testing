@@ -26,6 +26,6 @@ jobs:
       - name: Execute test case
         run: |
           xvfb-run -a pytest -s tests/test_musala.py -n 3
-        env:
-          PY_COLORS: '1'
-          ANSIBLE_FORCE_COLOR: '1'
+#         env:
+#           PY_COLORS: '1'
+#           ANSIBLE_FORCE_COLOR: '1'
