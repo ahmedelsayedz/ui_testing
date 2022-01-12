@@ -3,12 +3,9 @@ name: CI
 on:
   workflow_dispatch:
     inputs:
-      name:
-        type: choice
-        description: Who to greet
-        options: 
-        - monalisa
-        - cschleiden
+      comment:
+        description: 'An optional comment'
+        required: false
 
 jobs:
   publish:
