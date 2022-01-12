@@ -21,4 +21,4 @@ jobs:
         run:  pip3 install -r requirements.txt
       - name: Execute test case
         run: |
-          xvfb-run -a pytest -s tests/test_musala.py -n 3
+          xvfb-run -a pytest -s tests/test_musala.py
