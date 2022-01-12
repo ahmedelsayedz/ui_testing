@@ -28,6 +28,14 @@ Run the following command to execute all the test cases in parallel simultaneous
 pytest -s tests/test_musala.py -n 3
 ```
 
+## Execute via Github Actions: 🤖
+* From Gitub Action, go to **_All Workflows_**
+* Choose CI
+* Click on Run Workflow
+<img width="1356" alt="Screen Shot 2022-01-12 at 12 53 25 PM" src="https://user-images.githubusercontent.com/45901396/149127350-bd9a19dd-facf-461e-a928-0ed88fc3a683.png">
+
+
+
 
 ## Debugging: 🔍
 
