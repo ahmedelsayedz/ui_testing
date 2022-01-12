@@ -8,14 +8,6 @@ on:
         required: false
 
 jobs:
-#   publish:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - uses: actions/checkout@v2
-#       - uses: deepakputhraya/action-pr-title@v1.0.1
-#         with: # Regex the title should match.
-#           regex: '^(ci|docs|feat|fix|refactor|revert|test){1}(\([a-z]*\)){1}: ([\w `,.])+(\[([A-Z]{2,4}-\d{1,4})\]|\[No\-Jira\]){1}$'
-
   execute_tests:
     runs-on: ubuntu-latest
     steps:
